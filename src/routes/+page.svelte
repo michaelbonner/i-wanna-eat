@@ -20,7 +20,11 @@
 					href={`https://www.google.com/maps/place/?q=place_id:${restaurant.place_id}`}
 					target="_blank"
 				>
-					<h2 class="text-xl lg:text-2xl px-4 py-4 font-bold text-gray=700">{restaurant.name}</h2>
+					<div class="px-4 py-4">
+						<h2 class="text-xl lg:text-2xl font-bold text-gray=700 line-clamp-1">
+							{restaurant.name}
+						</h2>
+					</div>
 					{#if restaurant.photos?.length > 0}
 						<div
 							class="aspect-video bg-cover bg-center rounded-b-xl"
